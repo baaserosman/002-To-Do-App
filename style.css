@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  background-color: #1b7f79;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  padding-bottom: 1rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.list-group {
+  width: 300px;
+  border-radius: 0;
+}
+.list-group-item {
+  position: relative;
+  background-color: #00ccc0;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.507);
+  color: #1b7f79;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.list-group-item:hover {
+  background-color: #00ccc0;
+  color: #1b7f79;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.checkbox {
+  position: absolute;
+  display: inline-block;
+  right: -3rem;
+  padding-right: 4rem;
+}
+.form-check-input {
+  border-radius: 50% !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
