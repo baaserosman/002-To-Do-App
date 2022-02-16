@@ -4,7 +4,7 @@
 }
 
 .container-fluid {
-  background-color: #1b7f79;
+  background-color: #c7ffed;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -13,7 +13,7 @@
 }
 .title {
   padding-bottom: 1rem;
-  color: white;
+  color: rgb(49, 49, 49);
   font-weight: bolder;
 }
 
@@ -43,6 +43,7 @@
   padding-right: 4rem;
 }
 .form-check-input {
+  cursor: pointer;
   border-radius: 50% !important;
   background-color: rgba(255, 255, 255, 0) !important;
 }
