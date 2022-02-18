@@ -1,35 +1,23 @@
-// function check() {
-//   document.getElementsByClassName("myCheck").checked = true;
-// }
+//? ************ SELECTORS ****************************
 
-// function uncheck() {
-//   document.getElementsByClassName("myCheck").checked = false;
-// }
+const listItem = document.querySelectorAll(".text");
+const check = document.querySelectorAll(".fa-check");
+const revert = document.querySelectorAll(".fa-clock-rotate-left");
 
-document.querySelector(".check1").onclick = () => {
-  document.querySelector(".item1").style.backgroundColor = "#589A8D";
-  document.querySelector(".item1").style.textDecoration = "line-through";
-  document.querySelector(".item1").style.color = "#eb6464";
-};
+for (let i in check) {
+  check[i].onclick = () => {
+    listItem[i].style.backgroundImage = "linear-gradient(  #2e5f5c, #546d6b)";
+    listItem[i].style.textDecoration = "line-through 2px red";
+    listItem[i].style.color = "#30282881";
+  };
+}
 
-document.querySelector(".check2").onclick = () => {
-  document.querySelector(".item2").style.backgroundColor = "#589A8D";
-  document.querySelector(".item2").style.textDecoration = "line-through";
-  document.querySelector(".item2").style.color = "#eb6464";
-};
-document.querySelector(".check3").onclick = () => {
-  document.querySelector(".item3").style.backgroundColor = "#589A8D";
-  document.querySelector(".item3").style.textDecoration = "line-through";
-  document.querySelector(".item3").style.color = "#eb6464";
-};
-document.querySelector(".check4").onclick = () => {
-  document.querySelector(".item4").style.backgroundColor = "#589A8D";
-  document.querySelector(".item4").style.color = "#eb6464";
-  document.querySelector(".item4").style.textDecoration = "line-through";
-  document.querySelector(".item4").style.color = "#eb6464";
-};
-document.querySelector(".check5").onclick = () => {
-  document.querySelector(".item5").style.backgroundColor = "#589A8D";
-  document.querySelector(".item5").style.textDecoration = "line-through";
-  document.querySelector(".item5").style.color = "#eb6464";
-};
+for (let i in revert) {
+  revert[i].onclick = () => {
+    listItem[i].style.backgroundImage =
+      "linear-gradient(to right, #546d6b, #2e5f5c)";
+
+    listItem[i].style.textDecoration = "none";
+    listItem[i].style.color = "rgba(255, 255, 255, 0.611)";
+  };
+}
